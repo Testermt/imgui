@@ -505,3 +505,8 @@ jobs:
       run: |
         cd examples/example_android_opengl3/android
         gradle assembleDebug --stacktrace
+        
+        - name: Find APK location
+           run: |
+           find . -name "*.apk"
+        
